@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>WiktoriaLeszczynskaPortfolio</title>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Inter:wght@300;400;600&family=Fira+Code:wght@400;600&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/index.css">
+    <script src="https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.160.0/examples/js/controls/OrbitControls.js"></script>
+
+    <meta name="description" content="Portfolio showcasing game, VR and hackathon projects — demos, code and resume.">
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="logo" href="#">Wiktoria Leszczynska</a>
+            <nav class="nav">
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#skills">Skills</a>
+                <a href="#resume">Resume</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container hero-grid">
+                <div class="hero-text">
+                    <h1>Hello — I'm <span class="accent">Wiktoria Leszczynska</span></h1>
+                    <p class="lead">Final-year Software Design student building immersive games and VR experiences with
+                        industy experience.</p>
+                    <div class="hero-cta">
+                        <a href="#projects" class="btn">View Projects</a>
+                        <a href="#resume" class="btn btn-outline" download="Resume.pdf">Download Resume</a>
+                    </div>
+                </div>
+                <div class="vr-animation">
+                    <div class="vr-headset">
+                        <div class="vr-band"></div>
+                        <div class="vr-lens left"></div>
+                        <div class="vr-lens right"></div>
+                    </div>
+                    <div class="particles"></div>
+                </div>
+        </section>
+
+        <section id="about" class="section">
+            <div class="container split">
+                <div class="split-media">
+                    <img src="../images/me.jpeg" alt="Workstation / project screenshot">
+                </div>
+                <div class="split-content">
+                    <h2>About Me</h2>
+                    <p>Hi, I’m Wiktoria Leszczynska , a developer passionate about creating immersive experiences in VR
+                        and XR.
+                        I have a strong background in programming and enjoy working with languages like Python, C++, C#,
+                        Java, HTML, CSS, and MySQL, along with experience in CI/CD workflows.
+                        My strengths lie in building interactive, user-focused systems that blend creativity with
+                        technical precision.</p>
+                    <p>Outside of my work and studies,
+                        I love relaxing by watching shows, The Big Bang Theory is one of my all-time favorites. I also
+                        enjoy spending time reading books.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="resume" class="section pale">
+            <div class="container resume-grid">
+                <div>
+                    <h2>Resume — Highlights</h2>
+                    <ul class="resume-list">
+                        <strong>Education: </strong>
+                        <br>
+                        <li>Final year in Software Design with Virtual Reality and Gaming</li>
+                        <li><strong>Internship:</strong> Ericsson: Completed a software development placement at
+                            Ericsson Athlone, contributing to front-end and DevOps projects, including building and
+                            maintaining a CI/CD pipeline.
+                            Gained hands-on experience with tools such as Docker, Helm, and Git while working in an
+                            agile team environment.
+                            Developed strong technical, problem-solving, and communication skills through both project
+                            work and mentoring students in the INFUSE program.</li>
+                        <strong>Awards:</strong>
+                        <br>
+                        <li>Games Fleadh, Winner of Best Narrative (Patient Zero)</li>
+                        <li> NASA Space Apps Hackathon: 2nd Place winner with our project PAM - Pollen Alert Map</li>
+                        <li> Deans Honor list - Two consecutive years</li>
+                       
+                    </ul>
+                    <a href="../CV.pdf" class="btn"  target="_blank">Download Full Resume (PDF)</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="section">
+            <div class="container">
+                <h2>Projects</h2>
+                <p class="section-sub">A selection of games, VR work and hackathon builds.</p>
+
+                <article class="project">
+                    <video controls width="100%" poster="../images/patientthumbnail.png">
+                        aria-label="Patient Zero demo video">
+                        <source src="../images/patient0.mp4" type="video/mp4">
+                        Your browser doesn't support video playback. Link to <a
+                            href="../images/patient0.mp4">download</a>.
+                    </video>
+                    <div class="content">
+                        <h3>Patient Zero <span class="tag">Games Fleadh</span></h3>
+                        <p>3D video game which includes various mini-games. The objective of the game is to infect as
+                            mny people as possible. Created for Games Fleash 2023 and won Best in Game Narritive</p>
+                        <p class="meta"><strong>Role:</strong> Programmer • <strong>Tools:</strong> Unity, C#</p>
+                        <div class="project-buttons">
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project">
+                    <div class="media">
+                        <img src="../images/vr.png" alt="Elevator pitch image">
+                    </div>
+
+                    <div class="content">
+                        <h3>3rd Year VR Project <span class="tag">VR</span></h3>
+                        <p>An interactive medieval festivak experience. This includes finding food for market stalls,
+                            swords and an armor station you can physically put on.</p>
+                        <p class="meta"><strong>Role:</strong> Systems & UX • <strong>Tools:</strong> Unity, C#
+                        </p>
+                        <div class="project-buttons">
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project">
+                    <div class="media">
+                        <video controls width="100%" poster="../images/pamthumbnail.png" aria-label="PAM demo video">
+                            <source src="../images/howitworks1.mp4" type="video/mp4">
+                            Your browser doesn't support video playback. Link to
+                            <a href="../images/howitworks1.mp4">download</a>.
+                        </video>
+                    </div>
+
+                    <div class="content">
+                        <h3>NASA Space Apps Hackathon <span class="tag">Hackathon</span></h3>
+                        <p>Myself and my team created a web app called PAM (Pollen Alert Map). P.A.M is a pollen alert
+                            map that visualizes pollen forecasts to help individuals suffering from pollen allergies.
+                            Research shows that pollen seasons are lengthening due to climate change, increasing allergy
+                            risks.</p>
+                        <p class="meta"><strong>Role:</strong> Engineer • <strong>Tools:</strong> Google APIs, HTML,
+                            CSS,
+                            JavaScript</p>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <section id="skills" class="section pale">
+            <div class="container">
+                <h2>Skills</h2>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <h4>Programming</h4>
+                        <p>Unity (C#)<br>HTML, CSS, Javascript, MySQL, Python, C++ </p>
+                    </div>
+                    <div class="skill-card">
+                        <h4>Tools & Engines</h4>
+                        <p>Unity • Blender • Git • Visual Studio • Oculus SDK • Jenkins</p>
+                    </div>
+                    <div class="skill-card">
+                        <h4>Soft Skills</h4>
+                        <p>Teamwork • Communication • Rapid prototyping • Problem-solving</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Elevator pitch video -->
+        <section id="pitch" class="section">
+            <div class="container split-reverse">
+                <div class="split-content">
+                    <h2>Elevator Pitch</h2>
+                    <p>A short 3-minute video describing who I am, what I build, and what I’m looking for next.</p>
+                </div>
+                <div class="split-media">
+                    <!-- Placeholder video element -->
+                    <video controls width="100%" poster="video-poster.jpg" aria-label="Elevator pitch video">
+                        <source src="pitch.mp4" type="video/mp4">
+                        Your browser doesn't support video playback. Link to <a href="pitch.mp4">download</a>.
+                    </video>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section id="contact" class="section footer-cta">
+            <div class="container contact-grid">
+                <div>
+                    <h2>Contact</h2>
+                    <p>Send me a note if you'd like to see more demos or talk about opportuniti es.</p>
+                    <p><strong>Email:</strong> <a href="mailto:lwiktoria2003@gmail.com">lwiktoria2003@gmail.com</a></p>
+                    <p><strong>GitHub:</strong> <a href="https://github.com/your-username" target="_blank"
+                            rel="noopener">github.com/your-username</a></p>
+                    <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/wiktoria-leszczynska" target="_blank"
+                            rel="noopener">linkedin.com/in/wiktorialeszczynska</a></p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <div>© <span id="year"></span> Wiktoria Leszczynska. Built with ♥.</div>
+            <div class="social">
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+
+</html>
